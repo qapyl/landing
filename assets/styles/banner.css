@@ -1,0 +1,57 @@
+.banner {
+    background-color: black;
+    color: white;
+    text-align: left; /* Alineado a la izquierda */
+    padding: 50px; /* Agrega margen */
+    position: relative;
+    height: 80vh;
+}
+
+.typing-title {
+    margin-bottom: 4vh;
+    font-size: 3rem;
+    color: black;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace; /* Fuente tipo máquina de escribir */
+}
+
+.typing-title .qa {
+    color: yellow;
+}
+
+.typing {
+    border-right: 0.3em solid yellow; /* Barra amarilla más gruesa */
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 0.15em;
+    animation: blink-caret 1s step-end infinite; /* Solo animación de parpadeo */
+}
+
+.slogan {
+    color: #00AEEF;
+    margin: 20px 0;
+}
+
+.cta {
+    font-size: 3vh;
+    margin: 5vh 0;
+    font-weight:lighter;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 10px 50px;  /* Ajusté el padding para darle un aspecto más ovalado */
+    background-color: transparent;  /* Fondo transparente */
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;  /* Borde blanco */
+    border-radius: 50px;  /* Hace que el botón sea más ovalado */
+    margin-top: -20px;
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Añadí una transición para el color del texto también */
+}
+
+.get-started-btn:hover {
+    border:0px;
+    background-color: #00AEEF;  /* Fondo blanco al pasar el ratón por encima */
+    color: white;  /* Cambio el color del texto al color principal cuando se pasa el ratón por encima */
+}

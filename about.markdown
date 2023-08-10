@@ -1,5 +1,8 @@
 ---
 layout: about
 title: About Us
+testimonialCeo: After taking the Rust Blockchain Development course, I gained practical knowledge and experience in building decentralized applications on Near Protocol and Solana. This course deepened my understanding of blockchain fundamentals, smart contract development, and real-world use cases. With hands-on projects and guidance, I honed my Rust programming skills and learned to create secure and scalable blockchain solutions.
+testimonial2: The Solidity Programming course gave me a strong foundation in writing smart contracts and developing decentralized applications on Ethereum. The course provided comprehensive content, practical examples, and interactive projects that helped me grasp Solidity concepts quickly. With a focus on real-world applications, I gained the skills needed to create secure and efficient smart contracts. I recommend this course to anyone looking to enter the world of blockchain development with Solidity.
+testimonial3: So, I just finished the Solidity Programming course, and let me tell you, it's a game-changer! I learned how to write smart contracts like a pro and build awesome decentralized apps on Ethereum. The course was super engaging, with hands-on projects and real-life examples that made learning Solidity a breeze. Now I can create secure and efficient smart contracts that can change the world (or at least the blockchain world). If you're into blockchain development, this course is a must-try. Trust me, you won't be disappointed!
 permalink: /about/
 ---

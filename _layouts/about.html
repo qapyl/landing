@@ -50,13 +50,47 @@ layout: default
     <h3 class="subtitle">WHAT ARE OUR STUDENTS SAYING</h3>
 
     <!-- Testimonials Carousel -->
-    <div class="carousel-wrapper">
-        <div class="carousel-item">
-            <div class="testimonial-card">
-                <p class="testimonial-content">So, I just finished the Solidity Programming course...</p>
-                <p class="testimonial-author">Jeremy Schwartz - Freelancer</p>
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+
+            <!-- Slide 1 -->
+            <img src="/assets/img/testimonials/tceo.jpeg" alt="Saul Goodman" class="carousel-image">
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h3>Saul Goodman</h3>
+                    <p class="position">CEO & Founder</p>
+                    <blockquote>{{ page.testimonialCeo }}</blockquote>
+                </div>
+            </div>
+            <img src="/assets/img/testimonials/t1.jpeg" alt="Saul Goodman" class="carousel-image">
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h3>Sara Willson</h3>
+                    <p class="position">Aspiring Engineer</p>
+                    <blockquote>{{ page.testimonial2 }}</blockquote>
+                </div>
+            </div>
+            <img src="/assets/img/testimonials/t2.jpeg" alt="Saul Goodman" class="carousel-image">
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h3>Jose Gonzalez</h3>
+                    <p class="position">Freelancer</p>
+                    <blockquote>{{ page.testimonial3 }}</blockquote>
+                </div>
             </div>
         </div>
-        <!-- Repite .carousel-item para cada testimonio... -->
+        <div class="carousel-dots">
+            <!-- Se generarán los puntos aquí con JS -->
+        </div>
+        
     </div>
+    <div class="carousel-indicators">
+        <span class="indicator active"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+    </div>
+    
+    
+    <script src="/assets/js/carrousel.js"></script>
 </section>
