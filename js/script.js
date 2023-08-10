@@ -84,7 +84,10 @@ function typeWriter() {
     setTimeout(typeWriter, 1000);
 }
 
-window.addEventListener("DOMContentLoaded", typeWriter);
+document.addEventListener("DOMContentLoaded", function() {
+    initNavbar();
+    // y cualquier otro código inicial aquí
+});
 
 // end banner
 
