@@ -1,0 +1,66 @@
+.courses-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;  /* Espacio entre tarjetas */
+}
+
+.course-card {
+    width: 23%;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;  /* Borde redondeado */
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);  /* Efecto de levitación */
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.buy-course {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color .3s;
+}
+
+.buy-course:hover {
+    background-color: #357ABD;  /* Un color un poco más oscuro al pasar el mouse */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup-content {
+    width: 300px;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Añadir más estilo para el form, inputs, y botón de acuerdo a Material Design */

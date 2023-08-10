@@ -1,0 +1,26 @@
+<section class="courses-section" id="courses">
+    <div class="title-container">
+        <h2 class="title">COURSES</h2>
+        <hr class="divider">
+        <h2 class="subtitle">POPULAR COURSES</h2>
+    </div>
+
+    <div class="course-cards">
+        {% for course in site.data.courses limit: 3%}
+        <div class="course-card">
+            <img src="{{ course.image }}" alt="course image" class="course-image">
+            <span class="course-label">{{ course.label }}</span>
+            <span class="course-price">{{ course.price }}</span>
+            <h5 class="course-title">{{ course.title }}</h5>
+            <p class="course-desc">{{ course.description }}</p>
+            <hr class="course-divider">
+            <div class="course-footer">
+                <img src="{{ course.instructor_image }}" alt="Instructor image" class="instructor-image">
+                <span style="color: gray;" class="likes"><i class="fas fa-heart"></i>{{ course.likes }}</span>
+                <span style="color: grey;" class="students"><i class="fas fa-user"></i>{{ course.students }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>

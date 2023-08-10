@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<section class="about-us-section">
+    <div class="about-us-text">
+        <h2 style="margin-bottom: 2vh;">Our Courses</h2>
+        <p>At QAPY, we believe that the quality of an educational program is not only measured by the content of the course, but also by how it's delivered, understood, and applied in the real world. Here we present to you some reasons why our QA Programming and Learning courses are the best in the market:</p>
+    </div>
+</section>
+<section class="courses-section" style="background: white;" id="courses">
+    <hr class="divider" style="color: black;">
+    <div class="course-cards">
+        {% for course in site.data.courses %}
+            <div class="course-card">
+                <img src="{{ course.image }}" alt="course image" class="course-image">
+                <span class="course-label">{{ course.label }}</span>
+                <span class="course-price">{{ course.price }}</span>
+                <h5 class="course-title">{{ course.title }}</h5>
+                <p class="course-desc">{{ course.description }}</p>
+                <hr class="course-divider">
+                <div class="course-footer">
+                    <img src="{{ course.instructor_image }}" alt="Instructor image" class="instructor-image">
+                    <span style="color: gray;" class="likes"><i class="fas fa-heart"></i>{{ course.likes }}</span>
+                    <span style="color: grey;" class="students"><i class="fas fa-user"></i>{{ course.students }}</span>
+                </div>
+                <button class="buy-course">Buy Now</button>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<!-- Login Pop-up -->
+<div id="loginPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username/Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+<!-- Invalid Credentials Pop-up -->
+<div id="invalidPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup-invalid">&times;</span>
+        <h2>Error</h2>
+        <p>Credenciales incorrectas. Por favor, inténtalo de nuevo.</p>
+    </div>
+</div>

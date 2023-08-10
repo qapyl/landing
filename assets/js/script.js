@@ -87,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
     initNavbar();
     typeWriter();
     moveCarousel();
+    initPopupHandlers();
 });
 
 // end banner
