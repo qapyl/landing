@@ -61,7 +61,6 @@ ScrollReveal().reveal('.reveal-bottom', {
     opacity: 0
 });
 
-
 const typingText = document.querySelector(".typing");
 const baseText = "P";
 let currentChar = "Y";
@@ -86,7 +85,7 @@ function typeWriter() {
 
 document.addEventListener("DOMContentLoaded", function() {
     initNavbar();
-    // y cualquier otro código inicial aquí
+    typeWriter();
 });
 
 // end banner
