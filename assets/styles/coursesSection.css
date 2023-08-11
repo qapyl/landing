@@ -1,46 +1,30 @@
-.courses-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;  /* Espacio entre tarjetas */
-}
-
-.course-card {
-    width: 23%;
-    border: none;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;  /* Borde redondeado */
-    transition: transform .2s;
-    cursor: pointer;
-}
-
-.course-card:hover {
-    transform: translateY(-5px);  /* Efecto de levitación */
-}
-
-.course-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
 .buy-course {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 20px;
-    background-color: #4a90e2;
+    padding: 1.2vh 6vh; /* Más padding para hacer el botón un poco más grande */
+    background-color: #4caf50c2; /* Un verde fresco para darle una apariencia atractiva */
     color: white;
+    font-weight: bold; /* Texto en negrita para hacerlo más prominente */
+    font-size: 18px; /* Un tamaño de letra más grande */
     border: none;
-    border-radius: 8px;
-    transition: background-color .3s;
+    border-radius: 50px; /* Bordes redondeados para darle una apariencia suave */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+    cursor: pointer; 
+    margin-left: 5vh;
 }
 
 .buy-course:hover {
-    background-color: #357ABD;  /* Un color un poco más oscuro al pasar el mouse */
+    background-color: #45a049;  /* Un color un poco más oscuro al pasar el mouse */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Una sombra más oscura y más prominente al pasar el ratón por encima */
+    transform: translateY(-3px); /* Una pequeña elevación al pasar el ratón por encima */
 }
+
+.buy-course:active {
+    transform: translateY(2px); /* Presionar el botón un poco al hacer clic en él */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Una sombra más pequeña al hacer clic en él */
+}
+
 
 .popup {
     display: none;

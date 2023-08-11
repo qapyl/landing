@@ -90,6 +90,9 @@ document.addEventListener("DOMContentLoaded", function() {
     initPopupHandlers();
 });
 
+document.addEventListener('DOMContentLoaded', initPopupHandlers);
+
+
 // end banner
 
 // start footer
