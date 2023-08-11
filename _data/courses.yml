@@ -1,9 +1,18 @@
+- image: /assets/img/py1.avif
+  label: Developer
+  price: £150
+  title: Python Mastery > From Beginner to Pro. Dive into the world of Python.
+  description: Start your coding journey with this beginner-friendly course.
+  instructor_image: /assets/img/pp4.jpeg
+  likes: 13
+  students: 78
+
 - image: /assets/img/python1.jpg
   label: Developer
   price: £270
   title: Master Python > From Basics to Advanced Web Development with Flask
   description: Start your coding journey with this beginner-friendly course.
-  instructor_image: /assets/img/pp3.jpeg
+  instructor_image: /assets/img/pp4.jpeg
   likes: 38
   students: 50
 
@@ -12,7 +21,7 @@
   price: £400
   title: Mastering Python for Test Automation > From Zero to QA Expert
   description: Start your coding journey with this beginner-friendly course.
-  instructor_image: /assets/img/pp2.jpeg
+  instructor_image: /assets/img/pp3.jpeg
   likes: 14
   students: 33
 
@@ -20,34 +29,8 @@
   label: Developer
   price: £600
   title: Master Developer Full Stack > Intro to Web Development to domain all stacks.
-  description: Start your coding journey with this beginner-friendly course.
-  instructor_image: /assets/img/pp2.jpeg
-  likes: 43
-  students: 64
-  
-- image: /assets/img/python1.jpg
-  label: Developer
-  price: £270
-  title: Master Python > From Basics to Advanced Web Development with Flask
   description: Start your coding journey with this beginner-friendly course.
   instructor_image: /assets/img/pp3.jpeg
-  likes: 38
-  students: 50
-
-- image: /assets/img/pythonpro.jpeg
-  label: Developer
-  price: £400
-  title: Mastering Python for Test Automation > From Zero to QA Expert
-  description: Start your coding journey with this beginner-friendly course.
-  instructor_image: /assets/img/pp2.jpeg
-  likes: 14
-  students: 33
-
-- image: /assets/img/devfullstack.jpeg
-  label: Developer
-  price: £600
-  title: Master Developer Full Stack > Intro to Web Development to domain all stacks.
-  description: Start your coding journey with this beginner-friendly course.
-  instructor_image: /assets/img/pp2.jpeg
   likes: 43
   students: 64
+
