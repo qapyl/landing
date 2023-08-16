@@ -54,7 +54,7 @@ ScrollReveal().reveal('.reveal-right', {
 
 
 ScrollReveal().reveal('.reveal-bottom', { 
-    delay: 600,
+    delay: 500,
     distance: '500px',
     origin: 'bottom',
     reset: true,
