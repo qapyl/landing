@@ -125,8 +125,6 @@
         padding: 2vh 8vh; /* Menos padding horizontal en móviles */
         margin: 0 auto; /* Centrar en móviles */
         display: block; /* Asegura que el botón sea un bloque para centrarlo */
-        margin-top: 10vh;
-        margin-bottom: -10vh;
     }
 
     .course-title {
