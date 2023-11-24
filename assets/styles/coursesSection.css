@@ -1,3 +1,8 @@
+.container {
+    max-width: 90%; /* Ajusta esto al porcentaje deseado o usa un valor en píxeles */
+    margin: auto; /* Centra el contenedor */
+}
+
 .buy-course {
     display: inline-block;
     margin-top: 10px;
@@ -11,7 +16,7 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
     transition: all 0.3s ease; /* Transición suave para todos los cambios */
     cursor: pointer; 
-    margin-left: 5vh;
+    margin-left: 14vh;
 }
 
 .buy-course:hover {
@@ -48,3 +53,138 @@
 }
 
 /* Añadir más estilo para el form, inputs, y botón de acuerdo a Material Design */
+
+.course-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20vh;
+    padding-top: 20vh;
+}
+
+.course-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.course-info {
+    max-width: 60%;
+}
+
+.carousel {
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    display: none;
+    animation: fadeIn 1s ease-out;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.course-title a{
+    text-decoration: none !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.buy-course {
+    /* Tus estilos existentes para .buy-course */
+}
+
+/* Estilos generales que ya tienes */
+/* ... */
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20vh 5vh; /* Menos padding en móviles */
+    }
+
+    .course-info {
+        max-width: 100%; /* Utiliza todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio antes de la imagen del curso */
+    }
+
+    .course-image img {
+        margin-bottom: 20px; /* Espacio después de la imagen del curso */
+    }
+
+    .buy-course {
+        font-size: 16px; /* Ligeramente más pequeño en móviles */
+        padding: 2vh 8vh; /* Menos padding horizontal en móviles */
+        margin: 0 auto; /* Centrar en móviles */
+        display: block; /* Asegura que el botón sea un bloque para centrarlo */
+        margin-top: 10vh;
+        margin-bottom: -10vh;
+    }
+
+    .course-title {
+        font-size: 24px; /* Tamaño de fuente más grande para el título */
+        text-align: center; /* Centrar el título */
+        margin-bottom: 20px; /* Espacio después del título */
+        text-decoration: none;
+    }
+
+    .carousel-item h2 {
+        font-size: 18px; /* Tamaño de fuente más grande para los subtítulos de la semana */
+    }
+
+    .carousel-item ul {
+        padding-left: 20px; /* Espacio interior para la lista */
+    }
+
+    .carousel-item li {
+        font-size: 16px; /* Tamaño de fuente más grande para los items */
+        line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+        margin-bottom: 10px; /* Espacio después de cada item */
+    }
+}
+
+/* Estilos para animar el cambio de la semana en el carousel */
+.carousel-item {
+    animation: fadeInRight 0.5s ease-out forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Añadir estilo para el título y los items */
+.course-title {
+    font-weight: bold;
+    color: #2c3e50; /* Un color oscuro para darle prominencia */
+}
+
+.carousel-item li {
+    color: #34495e; /* Un color que contraste pero no sea demasiado brillante */
+    list-style-type: none; /* Opcional: elimina los bullets de la lista */
+    position: relative;
+}
+
+.carousel-item li:before {
+    content: '•'; /* Añade un bullet personalizado */
+    color: #4caf50; /* Color del bullet */
+    font-size: 24px; /* Tamaño del bullet */
+    line-height: 16px; /* Ajusta la línea del bullet para que se alinee bien */
+    position: absolute;
+    left: -1.5em; /* Posición del bullet a la izquierda */
+}
+

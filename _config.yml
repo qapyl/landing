@@ -53,3 +53,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# _config.yml
+collections:
+  courses:
+    output: true
+    permalink: /courses/:path/

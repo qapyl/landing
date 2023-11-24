@@ -16,7 +16,7 @@ layout: default
                 <img src="{{ course.image }}" alt="course image" class="course-image">
                 <span class="course-label">{{ course.label }}</span>
                 <span class="course-price">{{ course.price }}</span>
-                <h5 class="course-title">{{ course.title }}</h5>
+                <h5 class="course-title"><a href="{{ site.baseurl }}/courses/{{ course.slug }}">{{ course.title }}</a></h5>
                 <p class="course-desc">{{ course.description }}</p>
                 <hr class="course-divider">
                 <div class="course-footer">
